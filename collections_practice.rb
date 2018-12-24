@@ -1,6 +1,7 @@
 def sort_array_asc(array)
-  result = array.sort {|left, right| left.length <=> right.length}
-  puts result
+  result = array.sort do |a,b|
+    a <=> b
+  end
   end
 
   def sort_array_desc(array)
